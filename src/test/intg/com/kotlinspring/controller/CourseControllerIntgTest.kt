@@ -98,7 +98,6 @@ class CourseControllerIntgTest {
             .responseBody
 
         assertEquals("Build RestFul APis using SpringBoot and Kotlin2", updatedCourse?.name)
-
     }
 
     @Test
@@ -115,7 +114,6 @@ class CourseControllerIntgTest {
             .uri("$baseUrl/{courseId}", course.id)
             .exchange()
             .expectStatus().isNoContent
-
 
     }
 
