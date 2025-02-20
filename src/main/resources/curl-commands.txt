@@ -46,6 +46,11 @@ curl -i \
 -H "Content-Type: application/json" \
 -X POST http://localhost:8080/v1/instructors
 
+curl -i \
+-d '{"id":null, "name":"Femi Ezekiel"}' \
+-H "Content-Type: application/json" \
+-X POST http://localhost:8080/v1/instructors
+
 
 CREATE COURSE WITH INSTRUCTOR:
 ==================
